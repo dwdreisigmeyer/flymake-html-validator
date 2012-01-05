@@ -1,0 +1,28 @@
+;;; How to use this.
+;;
+;; Install validator.nu from
+;;
+;; http://about.validator.nu/
+;;
+;; You must start this running before you can use flymake.
+;; The default address for validator.nu is localhost:8888.
+;; If you wish to change this do:
+;;
+;; (setq validator-address "your-html-checker-address")
+;;
+;; Make sure this address is correct because flymake will not warn if it is wrong.
+;;
+;; By default the included php script validator-nu.php should be located
+;; in "~/.emacs.d/site-lisp/validators/".  That can be changed
+;; by doing:
+;;
+;; (setq validator-script "path/to/the/script")
+;;
+;; Make sure to chmod +x the script.
+;;
+;; Add the following lines to your emacs config:
+;;
+;; (require 'flymake-html-validator)
+;; (add-hook 'html-mode-hook 'flymake-mode)
+;;
+;; This worked on OS X 10.1 with Emacs 24.0.

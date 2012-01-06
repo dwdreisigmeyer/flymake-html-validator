@@ -7,7 +7,7 @@
 ;; URL: https://github.com/dwdreisigmeyer/emacs.d/blob/master/site-lisp/validators/flymake-html-validator.el
 ;;
 ;; Created: 5 JAN 2012
-;; Version: 1.0.1
+;; Version: 0.1
 ;;
 ;; Package-Requires: flymake (Works with Emacs 24.0 version)
 ;;
@@ -43,6 +43,13 @@
 ;; (setq validator-address "your-html-checker-address")
 ;;
 ;; Make sure this address is correct because flymake will not warn if it is wrong.
+;; I have this installed in the same directory as the default validator-script:
+;; 
+;; ~/emacs.d/site-lisp/validators/
+;;
+;; From here cd into checker and then do:
+;;
+;; python build/build.py run
 ;;
 ;; By default the included php script validator-nu.php should be located
 ;; in "~/.emacs.d/site-lisp/validators/".  That can be changed

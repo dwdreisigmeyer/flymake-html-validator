@@ -1,5 +1,5 @@
 ;;; flymake-html-validator.el
-;;; Make flymake work with Validator.nu
+;;; Make flymake work with Validator.nu.  This requires php4 or php5.
 ;;
 ;; Copyright (C) 2011 David Dreisigmeyer <dwdreisigmeyer@gmail.com>
 ;;
@@ -9,7 +9,7 @@
 ;; Created: 5 JAN 2012
 ;; Version: 0.1
 ;;
-;; Package-Requires: flymake (Works with Emacs 24.0 version)
+;; Package-Requires: flymake (Works with Emacs 24.0 version) and, php4 or php5.
 ;;
 ;;
 ;; This file is not part of GNU Emacs.
@@ -85,6 +85,9 @@
 	 (local-file (file-relative-name
 		      temp-file
 		      (file-name-directory buffer-file-name))))
+		      
+(message (expand-file-name "validator-nu.php" validator-script))
+		      
     (list (expand-file-name "validator-nu.php" validator-script)
 	  (list local-file validator-address))))
 

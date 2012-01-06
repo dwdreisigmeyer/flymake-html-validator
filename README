@@ -4,7 +4,10 @@
 ;;
 ;; http://about.validator.nu/
 ;;
-;; You must start this running before you can use flymake.
+;; You must start this running before you can use flymake, e.g., by doing
+;;
+;; python build/build.py run
+;;
 ;; The default address for validator.nu is localhost:8888.
 ;; If you wish to change this do:
 ;;

@@ -28,4 +28,4 @@
 ;; (require 'flymake-html-validator)
 ;; (add-hook 'html-mode-hook 'flymake-mode)
 ;;
-;; This worked on OS X 10.1 with Emacs 24.0.
+;; This worked on OS X 10.7 with Emacs 24.0.

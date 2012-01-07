@@ -84,10 +84,7 @@
 		     'flymake-create-temp-inplace))
 	 (local-file (file-relative-name
 		      temp-file
-		      (file-name-directory buffer-file-name))))
-		      
-(message (expand-file-name "validator-nu.php" validator-script))
-		      
+		      (file-name-directory buffer-file-name))))		      
     (list (expand-file-name "validator-nu.php" validator-script)
 	  (list local-file validator-address))))
 

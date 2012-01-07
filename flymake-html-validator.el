@@ -96,7 +96,7 @@
 	    flymake-allowed-file-name-masks))
 
 (setq flymake-err-line-patterns
-      (cons '("^\\([[:digit:]]+\\) :-: \\(.*\\)" nil 1 nil 2)
+      (cons '("\\([[:digit:]]+\\) :-: \\(.*\\)$" nil 1 nil 2)
 	    flymake-err-line-patterns))
 	    
 (add-hook 'html-mode-hook 'flymake-mode)

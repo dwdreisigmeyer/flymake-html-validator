@@ -1,14 +1,14 @@
-;;; flymake-html-validator.el
-;;; Make flymake work with Validator.nu.  This requires php4 or php5.
-;;
-;; Copyright (C) 2011 David Dreisigmeyer <dwdreisigmeyer@gmail.com>
-;;
-;; Author: David Dreisigmeyer <dwdreisigmeyer@gmail.com>
-;; URL: https://github.com/dwdreisigmeyer/emacs.d/blob/master/site-lisp/validators/flymake-html-validator.el
-;;
-;; Created: 5 JAN 2012
-;; Version: 0.1
-;;
+;;; flymake-html-validator.el --- Make flymake work with Validator.nu
+;;; This requires php4 or php5.
+;;;
+;;; Copyright (C) 2011 David Dreisigmeyer <dwdreisigmeyer@gmail.com>
+;;;
+;;; Author: David Dreisigmeyer <dwdreisigmeyer@gmail.com>
+;;; URL: https://github.com/dwdreisigmeyer/emacs.d/blob/master/site-lisp/validators/flymake-html-validator.el
+;;;
+;;; Created: 5 JAN 2012
+;;; Version: 0.1
+;;;
 ;; Package-Requires: flymake (Works with Emacs 24.0 version) and, php4 or php5.
 ;;
 ;;
@@ -102,3 +102,4 @@
 (add-hook 'html-mode-hook 'flymake-mode)
 (provide 'flymake-html-validator)
 
+;;; flymake-html-validator.el ends here
